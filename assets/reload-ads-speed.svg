@@ -1,0 +1,13 @@
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Strafe speed for hip, ADS, and reload ADS">
+  <rect width="720" height="220" fill="#121820"/>
+  <text x="24" y="48" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">hip</text>
+  <rect x="120" y="32" width="456" height="22" fill="#5ec8ff"/>
+  <text x="588" y="48" fill="#5ec8ff" font-size="12" font-family="Consolas,monospace">~152</text>
+  <text x="24" y="108" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">ADS</text>
+  <rect x="120" y="92" width="183" height="22" fill="#3dd68c"/>
+  <text x="316" y="108" fill="#3dd68c" font-size="12" font-family="Consolas,monospace">~61</text>
+  <text x="24" y="168" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">reload ADS</text>
+  <rect x="120" y="152" width="456" height="22" fill="#ff6b6b"/>
+  <text x="588" y="168" fill="#ff6b6b" font-size="12" font-family="Consolas,monospace">~152</text>
+  <text x="120" y="204" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">stock: reload ADS == hip. after the fix: reload ADS == ADS.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Speed mask 0x40 compared with 0x50">
+  <rect width="720" height="200" fill="#121820"/>
+  <text x="360" y="28" text-anchor="middle" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">pm_flags, bits 7 to 0</text>
+  <g font-family="Consolas,monospace" font-size="11" fill="#6b7280">
+    <text x="95" y="62" text-anchor="middle">7</text>
+    <text x="175" y="62" text-anchor="middle" fill="#f5d76e">6 walking</text>
+    <text x="255" y="62" text-anchor="middle">5</text>
+    <text x="335" y="62" text-anchor="middle" fill="#5ec8ff">4 aiming</text>
+    <text x="415" y="62" text-anchor="middle">3</text>
+    <text x="495" y="62" text-anchor="middle">2</text>
+    <text x="575" y="62" text-anchor="middle">1</text>
+    <text x="655" y="62" text-anchor="middle">0</text>
+  </g>
+  <rect x="60" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <rect x="140" y="84" width="70" height="36" fill="rgba(245,215,110,0.2)" stroke="#f5d76e" stroke-width="2"/>
+  <rect x="220" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <rect x="300" y="84" width="70" height="36" fill="rgba(94,200,255,0.2)" stroke="#5ec8ff" stroke-width="2"/>
+  <rect x="380" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <rect x="460" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <rect x="540" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <rect x="620" y="84" width="70" height="36" fill="#1e2833" stroke="#6b7280"/>
+  <g font-family="Consolas,monospace" font-size="14" fill="#6b7280" text-anchor="middle">
+    <text x="95" y="107">0</text>
+    <text x="175" y="107" fill="#f5d76e" font-size="16">1</text>
+    <text x="255" y="107">0</text>
+    <text x="335" y="107" fill="#5ec8ff" font-size="16">1</text>
+    <text x="415" y="107">0</text>
+    <text x="495" y="107">0</text>
+    <text x="575" y="107">0</text>
+    <text x="655" y="107">0</text>
+  </g>
+  <text x="80" y="156" fill="#ff6b6b" font-size="13" font-family="Consolas,monospace">stock mask  0x40  = walking only</text>
+  <text x="80" y="178" fill="#3dd68c" font-size="13" font-family="Consolas,monospace">CoD4x mask  0x50  = walking or sight-aiming</text>
+</svg>
