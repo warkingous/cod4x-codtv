@@ -32,26 +32,76 @@
   </div>
   <div class="doc-shell">
     {% include sidebar.html %}
-    <main class="doc-main" id="content">
-      <article class="doc-content">
-        <p class="doc-kicker">{{ page.section | default: "CoD4x" }}</p>
-        <h1 class="doc-title">{{ page.headline | default: page.title }}</h1>
-        {% if page.collection == "updates" %}
-          <p class="doc-meta">
-            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d. %m. %Y" }}</time>
-            {% if page.area %}
-              {% include area-labels.html area=page.area %}
-            {% endif %}
-          </p>
-        {% endif %}
-        <div class="markdown-body">
-          {{ content }}
-        </div>
-        <footer class="doc-footer">
-          <a href="https://github.com/warkingous/cod4x-codtv">warkingous/cod4x-codtv</a>
-        </footer>
-      </article>
-    </main>
+    <div class="doc-center">
+      <main class="doc-main" id="content">
+        <article class="doc-content">
+          {% unless page.nav == "home" %}
+            <nav class="doc-crumb" aria-label="Drobečková navigace">
+              <a href="{{ '/' | relative_url }}">Úvod</a>
+              <span aria-hidden="true">/</span>
+              {% if page.collection == "updates" %}
+                <a href="{{ '/updates/' | relative_url }}">Aktualizace</a>
+                <span aria-hidden="true">/</span>
+                <span>{{ page.title }}</span>
+              {% elsif page.nav == "updates" %}
+                <span>Aktualizace</span>
+              {% elsif page.nav == "client" %}
+                <span>Client</span>
+              {% elsif page.nav == "server" %}
+                <span>Server</span>
+              {% else %}
+                <span>{{ page.title }}</span>
+              {% endif %}
+            </nav>
+          {% endunless %}
+          <h1 class="doc-title">{{ page.headline | default: page.title }}</h1>
+          {% if page.summary %}
+            <p class="doc-lead">{{ page.summary }}</p>
+          {% endif %}
+          {% if page.collection == "updates" %}
+            <p class="doc-meta">
+              <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d. %m. %Y" }}</time>
+              {% if page.area %}
+                {% include area-labels.html area=page.area %}
+              {% endif %}
+            </p>
+          {% endif %}
+          <div class="markdown-body">
+            {{ content }}
+          </div>
+          <footer class="doc-footer">
+            <a href="https://github.com/warkingous/cod4x-codtv">warkingous/cod4x-codtv</a>
+          </footer>
+        </article>
+      </main>
+      <aside class="doc-toc" id="doc-toc" hidden>
+        <p class="doc-toc-label">Na této stránce</p>
+        <ul id="doc-toc-list"></ul>
+      </aside>
+    </div>
   </div>
+  <script>
+    (function () {
+      var root = document.querySelector(".markdown-body");
+      var list = document.getElementById("doc-toc-list");
+      var aside = document.getElementById("doc-toc");
+      if (!root || !list || !aside) return;
+      var heads = root.querySelectorAll("h2, h3");
+      if (heads.length < 2) return;
+      heads.forEach(function (heading) {
+        if (!heading.id) {
+          heading.id = heading.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        }
+        var item = document.createElement("li");
+        if (heading.tagName === "H3") item.className = "doc-toc-sub";
+        var link = document.createElement("a");
+        link.href = "#" + heading.id;
+        link.textContent = heading.textContent.replace(/\s+/g, " ").trim();
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+      aside.hidden = false;
+    })();
+  </script>
 </body>
 </html>
