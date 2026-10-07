@@ -1,0 +1,29 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AABB extends through wall">
+  <rect width="720" height="340" fill="#121820"/>
+  <defs>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ff6b6b"/>
+    </marker>
+  </defs>
+  <rect x="40" y="260" width="640" height="40" fill="#1e2833"/>
+  <rect x="330" y="120" width="28" height="140" fill="#6b7280"/>
+  <text x="344" y="110" text-anchor="middle" fill="#9ca3af" font-size="12" font-family="Consolas,monospace">WALL</text>
+  <rect x="200" y="145" width="320" height="110" fill="rgba(94,200,255,0.08)" stroke="#5ec8ff" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="210" y="138" fill="#5ec8ff" font-size="12" font-family="Consolas,monospace">cyan = stock AABB (world axes)</text>
+  <g transform="translate(400,200) rotate(-28)">
+    <rect x="-70" y="-28" width="140" height="56" rx="4" fill="#3d4450" stroke="#a8b0bc" stroke-width="2"/>
+    <rect x="-50" y="-18" width="50" height="20" fill="#2a3038"/>
+    <circle cx="-40" cy="28" r="10" fill="#222"/>
+    <circle cx="40" cy="28" r="10" fill="#222"/>
+  </g>
+  <text x="400" y="255" text-anchor="middle" fill="#a8b0bc" font-size="11">car (rotated)</text>
+  <circle cx="160" cy="245" r="8" fill="#f5d76e"/>
+  <text x="160" y="275" text-anchor="middle" fill="#f5d76e" font-size="12" font-family="Consolas,monospace">grenade</text>
+  <line x1="168" y1="240" x2="250" y2="160" stroke="#ff6b6b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="175" y="185" fill="#ff6b6b" font-size="11" font-family="Consolas,monospace">clear LOS</text>
+  <text x="175" y="200" fill="#ff6b6b" font-size="11" font-family="Consolas,monospace">to AABB corner</text>
+  <text x="175" y="215" fill="#ff6b6b" font-size="11" font-family="Consolas,monospace">(this side of wall!)</text>
+  <line x1="168" y1="242" x2="330" y2="200" stroke="#e879f9" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="330" cy="200" r="4" fill="#e879f9"/>
+  <text x="250" y="230" fill="#e879f9" font-size="10" font-family="Consolas,monospace">blocked</text>
+</svg>

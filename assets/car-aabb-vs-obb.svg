@@ -1,0 +1,16 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AABB vs OBB">
+  <rect width="720" height="300" fill="#121820"/>
+  <text x="180" y="28" text-anchor="middle" fill="#5ec8ff" font-size="13" font-family="Consolas,monospace">world AABB after angles</text>
+  <rect x="70" y="60" width="220" height="180" fill="rgba(94,200,255,0.1)" stroke="#5ec8ff" stroke-width="2"/>
+  <g transform="translate(180,150) rotate(-35)">
+    <rect x="-75" y="-30" width="150" height="60" fill="#3d4450" stroke="#a8b0bc" stroke-width="2"/>
+  </g>
+  <text x="180" y="270" text-anchor="middle" fill="#8b9aab" font-size="11">more overhang, more leaks</text>
+  <text x="540" y="28" text-anchor="middle" fill="#f5d76e" font-size="13" font-family="Consolas,monospace">OBB (our yellow)</text>
+  <g transform="translate(540,150) rotate(-35)">
+    <rect x="-85" y="-38" width="170" height="76" fill="rgba(245,215,110,0.12)" stroke="#f5d76e" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="-75" y="-30" width="150" height="60" fill="#3d4450" stroke="#a8b0bc" stroke-width="2"/>
+  </g>
+  <text x="540" y="270" text-anchor="middle" fill="#8b9aab" font-size="11">tight around the model</text>
+  <text x="360" y="155" text-anchor="middle" fill="#8b9aab" font-size="28">-&gt;</text>
+</svg>

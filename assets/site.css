@@ -268,6 +268,22 @@ body {
   font-size: 20px;
 }
 
+.doc-content .markdown-body .doc-figure {
+  margin: 16px 0 8px;
+}
+
+.doc-content .markdown-body .doc-figure img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--borderColor-default, #d0d7de);
+}
+
+.doc-content .markdown-body .doc-figure figcaption {
+  margin-top: 8px;
+  color: var(--fgColor-muted, #59636e);
+  font-size: 14px;
+}
+
 .doc-content .markdown-body table {
   display: table;
   width: 100%;

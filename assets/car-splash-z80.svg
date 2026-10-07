@@ -1,0 +1,41 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side view of the plus 80 splash hub over a wall">
+  <rect width="720" height="360" fill="#121820"/>
+  <defs>
+    <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#5ec8ff"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ff6b6b"/>
+    </marker>
+  </defs>
+  <rect x="40" y="280" width="640" height="36" fill="#1e2833"/>
+  <line x1="70" y1="280" x2="70" y2="100" stroke="#3a4554" stroke-width="1"/>
+  <text x="58" y="285" fill="#6b7280" font-size="10" font-family="Consolas,monospace" text-anchor="end">0</text>
+  <text x="58" y="220" fill="#6b7280" font-size="10" font-family="Consolas,monospace" text-anchor="end">40</text>
+  <text x="58" y="160" fill="#6b7280" font-size="10" font-family="Consolas,monospace" text-anchor="end">80</text>
+  <text x="58" y="110" fill="#6b7280" font-size="10" font-family="Consolas,monospace" text-anchor="end">Z</text>
+  <rect x="340" y="170" width="26" height="110" fill="#6b7280"/>
+  <text x="353" y="158" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="Consolas,monospace">WALL</text>
+  <text x="353" y="148" text-anchor="middle" fill="#9ca3af" font-size="10" font-family="Consolas,monospace">taller than car</text>
+  <g transform="translate(200,255)">
+    <rect x="-85" y="-50" width="170" height="50" rx="3" fill="#3d4450" stroke="#a8b0bc" stroke-width="2"/>
+    <rect x="-55" y="-70" width="70" height="22" fill="#2a3038" stroke="#a8b0bc" stroke-width="1"/>
+    <circle cx="-50" cy="0" r="12" fill="#222"/>
+    <circle cx="50" cy="0" r="12" fill="#222"/>
+    <circle cx="0" cy="0" r="4" fill="#f5d76e"/>
+    <text x="0" y="22" text-anchor="middle" fill="#f5d76e" font-size="10" font-family="Consolas,monospace">origin</text>
+  </g>
+  <text x="200" y="310" text-anchor="middle" fill="#a8b0bc" font-size="11">car</text>
+  <line x1="200" y1="255" x2="200" y2="160" stroke="#f5d76e" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="200" cy="160" r="8" fill="#f5d76e"/>
+  <text x="200" y="145" text-anchor="middle" fill="#f5d76e" font-size="12" font-family="Consolas,monospace">origin + (0,0,80)</text>
+  <text x="215" y="200" fill="#f5d76e" font-size="10" font-family="Consolas,monospace">+80</text>
+  <rect x="500" y="200" width="36" height="80" fill="rgba(94,200,255,0.15)" stroke="#5ec8ff" stroke-width="2"/>
+  <circle cx="518" cy="215" r="5" fill="#5ec8ff"/>
+  <text x="518" y="195" text-anchor="middle" fill="#5ec8ff" font-size="11" font-family="Consolas,monospace">player</text>
+  <text x="518" y="310" text-anchor="middle" fill="#8b9aab" font-size="11">cover</text>
+  <line x1="208" y1="160" x2="505" y2="215" stroke="#5ec8ff" stroke-width="2.5" marker-end="url(#arrowCyan)"/>
+  <text x="360" y="155" fill="#5ec8ff" font-size="12" font-family="Consolas,monospace">clear LOS over wall</text>
+  <line x1="200" y1="230" x2="340" y2="210" stroke="#e879f9" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowRed)"/>
+  <text x="230" y="250" fill="#e879f9" font-size="11" font-family="Consolas,monospace">low hub would hit wall</text>
+</svg>
