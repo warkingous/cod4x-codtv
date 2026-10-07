@@ -40,7 +40,7 @@
           <p class="doc-meta">
             <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d. %m. %Y" }}</time>
             {% if page.area %}
-              <span class="IssueLabel doc-area doc-area-{{ page.area }}">{% include area.html area=page.area %}</span>
+              {% include area-labels.html area=page.area %}
             {% endif %}
           </p>
         {% endif %}

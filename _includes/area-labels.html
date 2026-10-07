@@ -1,0 +1,10 @@
+{%- if include.area == "both" -%}
+<span class="IssueLabel doc-area doc-area-client">Client</span>
+<span class="IssueLabel doc-area doc-area-server">Server</span>
+{%- elsif include.area == "server" -%}
+<span class="IssueLabel doc-area doc-area-server">Server</span>
+{%- elsif include.area == "client" -%}
+<span class="IssueLabel doc-area doc-area-client">Client</span>
+{%- else -%}
+<span class="IssueLabel doc-area">{{ include.area }}</span>
+{%- endif -%}

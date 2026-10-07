@@ -11,7 +11,7 @@ Nový update je jeden soubor ve složce `_updates`. GitHub Pages po pushi do `ma
 
 1. Zkopíruj `_updates/priklad.md`.
 2. Pojmenuj kopii podle data a tématu, třeba `2026-10-07-slide.md`. Jméno souboru je adresa: `/updates/2026-10-07-slide/`.
-3. Uprav hlavičku na začátku souboru. `area` je `client` nebo `server`.
+3. Uprav hlavičku na začátku souboru. `area` je `client`, `server`, nebo `both`, když se změna týká obou.
 
 ~~~yaml
 ---

@@ -167,6 +167,12 @@ body {
   margin-top: 24px;
 }
 
+.doc-areas {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 .doc-area {
   background: var(--bgColor-accent-muted, rgba(9, 105, 218, 0.12));
   color: var(--fgColor-accent, #0969da);
@@ -282,7 +288,7 @@ body {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 
-  .doc-update .doc-area {
+  .doc-update .doc-areas {
     grid-column: 1 / -1;
   }
 }

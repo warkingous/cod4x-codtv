@@ -2,7 +2,7 @@
 title: Engine improvements
 summary: The game simulation now runs at 125 Hz, one exact 8 ms step, and player interpolation on the server and client follows that tick instead of the old 50 ms step.
 date: 2026-10-07
-area: client
+area: both
 ---
 
 Call of Duty 4 simulates the world at 20 Hz. One server frame is 50 ms, and a lot of movement code still assumed that number. Raising the tick without changing interpolation makes other players stutter, because the client keeps drawing them as if the next snapshot were still 50 ms away.

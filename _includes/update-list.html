@@ -1,6 +1,9 @@
-{% assign items = site.updates | sort: "date" | reverse %}
-{% if include.area != "all" %}
-  {% assign items = items | where: "area", include.area %}
+{% if include.area == "all" %}
+  {% assign items = site.updates | sort: "date" | reverse %}
+{% else %}
+  {% assign direct = site.updates | where: "area", include.area %}
+  {% assign shared = site.updates | where: "area", "both" %}
+  {% assign items = direct | concat: shared | sort: "date" | reverse %}
 {% endif %}
 {% if items.size == 0 %}
   <p class="doc-empty">Zatím tu nic není. Nový zápis se přidává jako soubor do složky <code>_updates</code>.</p>
@@ -8,7 +11,7 @@
   <div class="doc-updates">
     {% for item in items %}
       <a class="doc-update" href="{{ item.url | relative_url }}">
-        <span class="IssueLabel doc-area doc-area-{{ item.area }}">{% include area.html area=item.area %}</span>
+        <span class="doc-areas">{% include area-labels.html area=item.area %}</span>
         <span class="doc-update-body">
           <span class="doc-update-title">{{ item.title }}</span>
           {% if item.summary %}
