@@ -1,0 +1,21 @@
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Official CoD4x xmodel pool versus raised default">
+  <rect width="720" height="260" fill="#121820"/>
+
+  <text x="180" y="28" text-anchor="middle" fill="#ff6b6b" font-size="13" font-family="Consolas,monospace">official default</text>
+  <rect x="30" y="44" width="300" height="180" fill="rgba(255,107,107,0.05)" stroke="#ff6b6b" stroke-width="1" opacity="0.45"/>
+  <text x="50" y="90" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">XMODEL pool</text>
+  <rect x="50" y="105" width="120" height="28" fill="#ff6b6b"/>
+  <text x="60" y="124" fill="#121820" font-size="14" font-family="Consolas,monospace">1000</text>
+  <text x="50" y="170" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">MATERIAL pool</text>
+  <rect x="50" y="185" width="200" height="22" fill="#8b9aab"/>
+  <text x="60" y="201" fill="#121820" font-size="12" font-family="Consolas,monospace">2048</text>
+
+  <text x="540" y="28" text-anchor="middle" fill="#3dd68c" font-size="13" font-family="Consolas,monospace">our default</text>
+  <rect x="390" y="44" width="300" height="180" fill="rgba(61,214,140,0.05)" stroke="#3dd68c" stroke-width="1" opacity="0.45"/>
+  <text x="410" y="90" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">XMODEL pool</text>
+  <rect x="410" y="105" width="240" height="28" fill="#3dd68c"/>
+  <text x="420" y="124" fill="#121820" font-size="14" font-family="Consolas,monospace">2000</text>
+  <text x="410" y="170" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">MATERIAL pool</text>
+  <rect x="410" y="185" width="195" height="22" fill="#3dd68c"/>
+  <text x="420" y="201" fill="#121820" font-size="12" font-family="Consolas,monospace">2000</text>
+</svg>
