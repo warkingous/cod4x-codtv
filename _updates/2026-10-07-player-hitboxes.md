@@ -9,10 +9,6 @@ Stock Call of Duty 4 answers a bullet with `DObjTraceline` against baked boxes o
 
 Player hits now test capsules. A capsule is a cylinder with a hemisphere on each end, swept between two bones. It turns with the skeleton, so the volume follows the pose.
 
-![Capsule hitboxes, front view]({{ '/assets/hitbox-v2.svg' | relative_url }})
-
-The picture is the standing pose in the same colors the client draws when `cg_playerHitboxColor` is `0`. Numbers are the radius in game units.
-
 ## What gets traced
 
 Each segment is one capsule. The server, the listen-server hook, and the debug draw share one table.
