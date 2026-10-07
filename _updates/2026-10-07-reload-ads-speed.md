@@ -1,10 +1,16 @@
 ---
 title: ADS speed while reloading
 category: Engine improvements
-summary: Stock ADS during a reload keeps the zoom and the hip strafe, about 152. The move scale now also sees the aiming flag, so that strafe drops to the normal ADS speed, about 61.
+summary: Reloading while aimed used to let you strafe at full hip speed with the sight still up. You now move at normal ADS speed for that peek.
 date: 2026-10-07
 area: both
 ---
+
+## In plain terms
+
+**The problem.** Hold aim, start a reload, and keep strafing around a corner. Stock still showed the ADS zoom, but you moved as fast as from the hip. That was a free speed boost on every reload peek — especially obvious with scopes.
+
+**What we improved.** If you are aimed in during a reload, you get the normal ADS slowdown. Hip reload is unchanged. A normal ADS without reload is unchanged. Only the cheesy “zoomed but fast” case is gone.
 
 ## Stock
 

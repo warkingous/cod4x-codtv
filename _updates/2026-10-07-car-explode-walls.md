@@ -1,11 +1,16 @@
 ---
 title: Car explosions through walls
-summary: A grenade behind a wall could detonate a car, and the car's own splash then hit players over that wall. The car samples now follow the car's facing, and the splash point is lower.
+category: Engine improvements
+summary: A grenade or car blast could hurt you through a wall. Cars now respect the wall for both lighting the car and the explosion that follows.
 date: 2026-10-07
 area: server
 ---
 
-Two different blasts were getting through cover. The grenade set the car off. The car's own explosion then damaged the player.
+## In plain terms
+
+**The problem.** Two separate cheesy deaths. Toss a nade on your side of a wall next to a parked car, and the car could still blow up. Then the car's own blast could reach you over that same wall even if you were crouched in cover. Cover did not feel like cover.
+
+**What we improved.** The game checks damage against the real shape of the car, not a loose box that sticks through the wall. The car's explosion also starts a bit lower, so rays hit the wall instead of skipping over it. A nade or a player out in the open next to the car still works as before.
 
 ## Stock
 

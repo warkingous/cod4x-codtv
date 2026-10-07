@@ -1,10 +1,16 @@
 ---
 title: Smoke and flash pickup
 category: Engine improvements
-summary: Stock only lets you pick the secondary offhand that matches your loadout. You can now take smoke or flash from a corpse drop either way, and the cursor hint no longer shows PICKUP on a live thrown grenade.
+summary: You can pick up smoke or flash from a dead player even if your class had the other one. A live thrown grenade no longer shows a fake PICKUP prompt.
 date: 2026-10-07
 area: both
 ---
+
+## In plain terms
+
+**The problem.** Two annoyances. If your loadout was smoke, you could not take a flash off a corpse (and the other way around). And when someone cooked a nade and left it on the ground, the UI could show both “throw back” and “pickup” — even though a live grenade waiting to explode is not loot.
+
+**What we improved.** From a corpse drop you can take smoke or flash either way; picking one replaces the other in your secondary slot. A cooking thrown nade is not a pickup: frag still offers throw back, smoke and flash show no pickup line. Only grenades that fell off a body use PICKUP.
 
 ## Stock
 

@@ -1,10 +1,16 @@
 ---
 title: Higher tickrate
 category: Engine improvements
-summary: Stock simulation is 20 Hz, one 50 ms step. The server and the client now run at 125 Hz, one exact 8 ms step, and interpolation follows that step.
+summary: The game used to update the world 20 times a second. It now updates 125 times a second, so movement and other players look and feel smoother.
 date: 2026-10-07
 area: both
 ---
+
+## In plain terms
+
+**The problem.** Stock CoD4 thinks in big 50 ms chunks. Your movement, collisions, and how other players are drawn all wait on that slow clock. On a fast server that still feels choppy: enemies hitch between positions, and your own steps are coarse.
+
+**What we improved.** The server and a matching client now run at 125 updates a second — an 8 ms step instead of 50 ms. Movement is finer. Other players slide between snapshots instead of jumping. Promod locks the server and client rates together so everyone stays in sync.
 
 ## Stock
 

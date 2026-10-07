@@ -1,10 +1,16 @@
 ---
 title: Scoreboard player names
 category: Engine improvements
-summary: Connecting could leave some scoreboard rows blank, or show the player who had that slot before. The join no longer replays an older name list over the one in the gamestate.
+summary: Joining a server could leave scoreboard names blank or show whoever had that slot before. Names now match the players who are actually in the game.
 date: 2026-10-07
 area: both
 ---
+
+## In plain terms
+
+**The problem.** You connect, open the scoreboard, and some rows are empty — or still show a name from a previous match or another player who used that slot. The game already knew who was online; the scoreboard just failed to show it.
+
+**What we improved.** On join, the scoreboard keeps the name list that came with the connection. The server no longer rewinds and resends an older list that the client then ignores. You should see the real names of everyone already in the server.
 
 ## Stock
 

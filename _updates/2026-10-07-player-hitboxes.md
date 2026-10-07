@@ -1,10 +1,16 @@
 ---
 title: Player hitboxes
 category: Engine improvements
-summary: Stock bullets hit baked boxes on the bones. Hits now use capsules along the live skeleton, the same idea as CS2.
+summary: Bullets used to hit blocky boxes around bones. Hits now follow the body more closely, like modern shooters, so awkward corner hits are rarer.
 date: 2026-10-07
 area: both
 ---
+
+## In plain terms
+
+**The problem.** Stock hit detection uses stiff boxes glued to bones. When someone crouches, leans, or aims, those boxes stay chunky. A bullet can count as a hit on empty space at a corner, or miss a limb that clearly looked covered.
+
+**What we improved.** Hits use capsules that follow the live skeleton — rounded tubes along the arms, legs, head, and torso. The shape turns with the pose, closer to how CS2 does it. Damage locations (head, chest, limbs) stay the same, so hitmarkers and damage still feel like CoD4. Servers can turn the system off or scale the sizes if needed.
 
 ## Stock
 
