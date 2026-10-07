@@ -1,8 +1,8 @@
 title: CoD4x
-description: Aktualizace CoD4x — client a server.
+description: CoD4x updates for the client and the server.
 url: https://warkingous.github.io
 baseurl: /cod4x-codtv
-lang: cs
+lang: en
 timezone: Europe/Prague
 markdown: kramdown
 kramdown:

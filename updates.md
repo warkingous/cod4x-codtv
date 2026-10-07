@@ -1,10 +1,10 @@
 ---
-title: Všechny aktualizace
-section: Aktualizace
+title: All updates
+section: Updates
 nav: updates
 permalink: /updates/
 ---
 
-Všechny zápisy, od nejnovějšího.
+Every write-up, newest first.
 
 {% include update-list.html area="all" %}

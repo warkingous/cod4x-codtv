@@ -1,10 +1,10 @@
 ---
 title: Client
-section: Aktualizace
+section: Updates
 nav: client
 permalink: /client/
 ---
 
-Změny v CoD4x clientu.
+Changes in the CoD4x client.
 
 {% include update-list.html area="client" %}

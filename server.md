@@ -1,10 +1,10 @@
 ---
 title: Server
-section: Aktualizace
+section: Updates
 nav: server
 permalink: /server/
 ---
 
-Změny v CoD4x serveru.
+Changes in the CoD4x server.
 
 {% include update-list.html area="server" %}

@@ -6,7 +6,7 @@
   {% assign items = direct | concat: shared | sort: "date" | reverse %}
 {% endif %}
 {% if items.size == 0 %}
-  <p class="doc-empty">Zatím tu nic není. Nový zápis se přidává jako soubor do složky <code>_updates</code>.</p>
+  <p class="doc-empty">Nothing here yet. A new write-up is a file in the <code>_updates</code> folder.</p>
 {% else %}
   <div class="doc-updates">
     {% for item in items %}
@@ -18,7 +18,7 @@
             <span class="doc-update-summary">{{ item.summary }}</span>
           {% endif %}
         </span>
-        <time class="doc-update-date" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%d. %m. %Y" }}</time>
+        <time class="doc-update-date" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %d, %Y" }}</time>
       </a>
     {% endfor %}
   </div>

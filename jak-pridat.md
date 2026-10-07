@@ -1,29 +1,29 @@
 ---
-title: Jak přidat update
-section: Šablona
+title: Add an update
+section: Template
 nav: guide
 permalink: /jak-pridat/
 ---
 
-Nový update je jeden soubor ve složce `_updates`. GitHub Pages po pushi do `main` stránku sám přegeneruje.
+A new update is one file in `_updates`. GitHub Pages rebuilds the site after a push to `main`.
 
-## Postup
+## Steps
 
-1. Zkopíruj `_updates/priklad.md`.
-2. Pojmenuj kopii podle data a tématu, třeba `2026-10-07-slide.md`. Jméno souboru je adresa: `/updates/2026-10-07-slide/`.
-3. Uprav hlavičku na začátku souboru. `area` je `client`, `server`, nebo `both`, když se změna týká obou.
+1. Copy `_updates/priklad.md`.
+2. Name the copy by date and topic, for example `2026-10-07-slide.md`. The file name is the address: `/updates/2026-10-07-slide/`.
+3. Edit the header at the top of the file. `area` is `client`, `server`, or `both` when the change covers both.
 
 ~~~yaml
 ---
-title: Název updatu
-summary: Jedna věta, která se ukáže v seznamu.
+title: Update title
+summary: One sentence shown in the list.
 date: 2026-10-07
 area: client
 ---
 ~~~
 
-4. Pod hlavičku napiš text v Markdownu. Nadpisy od `##`, odrážky, `kód` i bloky kódu.
-5. Příklad `_updates/priklad.md` smaž, až budeš mít první skutečný zápis.
-6. Commitni a pushni do větve `main`.
+4. Write the text under the header in Markdown. Headings from `##`, lists, `code`, and code blocks.
+5. Delete the `_updates/priklad.md` example once the first real write-up is in.
+6. Commit and push to the `main` branch.
 
-Stránka se za minutu až dvě objeví v levém menu pod **Poslední** a v seznamu podle `area`.
+Within a minute or two the page shows in the left menu under **Latest**, and in the list for its `area`.

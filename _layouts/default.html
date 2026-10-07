@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 </head>
 <body>
-  <a class="doc-skip" href="#content">Přeskočit na obsah</a>
+  <a class="doc-skip" href="#content">Skip to content</a>
   <input type="checkbox" id="nav-toggle" class="doc-nav-toggle" aria-hidden="true">
   <div class="doc-top">
     <div class="doc-accent"></div>
@@ -21,7 +21,7 @@
         <a class="Header-link doc-brand" href="{{ '/' | relative_url }}">
           <span class="doc-mark" aria-hidden="true">4x</span>
           <span class="doc-brand-name">CoD4x</span>
-          <span class="doc-brand-section">Aktualizace</span>
+          <span class="doc-brand-section">Updates</span>
         </a>
       </div>
       <div class="Header-item Header-item--full"></div>
@@ -36,15 +36,15 @@
       <main class="doc-main" id="content">
         <article class="doc-content">
           {% unless page.nav == "home" %}
-            <nav class="doc-crumb" aria-label="Drobečková navigace">
-              <a href="{{ '/' | relative_url }}">Úvod</a>
+            <nav class="doc-crumb" aria-label="Breadcrumb">
+              <a href="{{ '/' | relative_url }}">Home</a>
               <span aria-hidden="true">/</span>
               {% if page.collection == "updates" %}
-                <a href="{{ '/updates/' | relative_url }}">Aktualizace</a>
+                <a href="{{ '/updates/' | relative_url }}">Updates</a>
                 <span aria-hidden="true">/</span>
                 <span>{{ page.title }}</span>
               {% elsif page.nav == "updates" %}
-                <span>Aktualizace</span>
+                <span>Updates</span>
               {% elsif page.nav == "client" %}
                 <span>Client</span>
               {% elsif page.nav == "server" %}
@@ -60,7 +60,7 @@
           {% endif %}
           {% if page.collection == "updates" %}
             <p class="doc-meta">
-              <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d. %m. %Y" }}</time>
+              <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
               {% if page.area %}
                 {% include area-labels.html area=page.area %}
               {% endif %}
@@ -75,7 +75,7 @@
         </article>
       </main>
       <aside class="doc-toc" id="doc-toc" hidden>
-        <p class="doc-toc-label">Na této stránce</p>
+        <p class="doc-toc-label">On this page</p>
         <ul id="doc-toc-list"></ul>
       </aside>
     </div>

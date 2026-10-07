@@ -1,12 +1,12 @@
 ---
-title: Úvod
-headline: CoD4x aktualizace
-section: Úvod
+title: Home
+headline: CoD4x updates
+section: Home
 nav: home
 ---
 
-Přehled změn v CoD4x. Client a server mají vlastní stránky, každý update je samostatný zápis.
+A list of CoD4x changes. The client and the server each have a page. Every update is its own article.
 
-## Nejnovější
+## Latest
 
 {% include update-list.html area="all" %}
