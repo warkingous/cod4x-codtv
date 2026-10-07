@@ -1,7 +1,7 @@
 ---
 title: Player hitboxes
 summary: Bullet hits on players use capsules along the live skeleton, the same idea as CS2, instead of the stock bone boxes.
-date: 2026-10-07 18:00:00
+date: 2026-10-07
 area: both
 ---
 
