@@ -30,7 +30,7 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 | Shin | knee → ankle | 3.1 |
 | Foot | ankle → ball | 2.3, tapering to 2.0 |
 
-The chest is not one box. Four capsules run up the spine from `J_SpineLower` through `J_SpineUpper` to `J_Spine4`, with radii 6.6, 7.2, 7.4, and 6.6. The stomach stays round. The chest above it is wider so it covers the ribcage. The lower ones are pulled slightly toward the belly so the waist is not a hole between the hips and the chest. The first of those four is a stomach hit. The other three are upper torso.
+The stomach is one capsule on the lower spine. The upper chest is four horizontal ovals stacked up the ribcage, wide across the body, the same layout as the CS2 chest. Shoulders stay on their own capsules.
 
 Hands and feet taper, the same way CS narrows the end of a limb. The heel of each boot is tucked 0.6 units back into the shin capsule so the sole stays on the ball of the foot and the heel does not stick out as its own target.
 
