@@ -30,7 +30,7 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 | Shin | knee → ankle | 3.1 |
 | Foot | ankle → ball | 2.3, tapering to 2.0 |
 
-The torso is five horizontal ovals, wide across the body, stacked from the shoulders down to the hips. The bottom one is the stomach and is a little wider than the four chest ovals above it. Shoulders stay on their own capsules.
+The torso is five horizontal ovals, wide across the body, stacked from the hips up to the shoulder bones. The top oval is lifted above the upper spine so it meets the shoulders. The bottom one is the stomach and is a little wider than the four chest ovals above it. Shoulders stay on their own capsules.
 
 Hands and feet taper, the same way CS narrows the end of a limb. The heel of each boot is tucked 0.6 units back into the shin capsule so the sole stays on the ball of the foot and the heel does not stick out as its own target.
 
