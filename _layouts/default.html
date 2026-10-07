@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description | escape }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/primitives@11.10.0/dist/css/functional/themes/light.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/primitives@11.10.0/dist/css/functional/themes/dark.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/css@22.3.2/dist/primer.css">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="doc-skip" href="#content">Přeskočit na obsah</a>
+  <input type="checkbox" id="nav-toggle" class="doc-nav-toggle" aria-hidden="true">
+  <div class="doc-top">
+    <div class="doc-accent"></div>
+    <header class="Header">
+      <div class="Header-item">
+        <label class="doc-menu-btn Header-link" for="nav-toggle">Menu</label>
+        <a class="Header-link doc-brand" href="{{ '/' | relative_url }}">
+          <span class="doc-mark" aria-hidden="true">4x</span>
+          <span class="doc-brand-name">CoD4x</span>
+          <span class="doc-brand-section">Aktualizace</span>
+        </a>
+      </div>
+      <div class="Header-item Header-item--full"></div>
+      <div class="Header-item mr-0">
+        <a class="Header-link" href="https://github.com/warkingous/cod4x-codtv">GitHub</a>
+      </div>
+    </header>
+  </div>
+  <div class="doc-shell">
+    {% include sidebar.html %}
+    <main class="doc-main" id="content">
+      <article class="doc-content">
+        <p class="doc-kicker">{{ page.section | default: "CoD4x" }}</p>
+        <h1 class="doc-title">{{ page.headline | default: page.title }}</h1>
+        {% if page.collection == "updates" %}
+          <p class="doc-meta">
+            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d. %m. %Y" }}</time>
+            {% if page.area %}
+              <span class="IssueLabel doc-area doc-area-{{ page.area }}">{% include area.html area=page.area %}</span>
+            {% endif %}
+          </p>
+        {% endif %}
+        <div class="markdown-body">
+          {{ content }}
+        </div>
+        <footer class="doc-footer">
+          <a href="https://github.com/warkingous/cod4x-codtv">warkingous/cod4x-codtv</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

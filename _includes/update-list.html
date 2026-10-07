@@ -1,0 +1,22 @@
+{% assign items = site.updates | sort: "date" | reverse %}
+{% if include.area != "all" %}
+  {% assign items = items | where: "area", include.area %}
+{% endif %}
+{% if items.size == 0 %}
+  <p class="doc-empty">Zatím tu nic není. Nový zápis se přidává jako soubor do složky <code>_updates</code>.</p>
+{% else %}
+  <div class="doc-updates">
+    {% for item in items %}
+      <a class="doc-update" href="{{ item.url | relative_url }}">
+        <span class="IssueLabel doc-area doc-area-{{ item.area }}">{% include area.html area=item.area %}</span>
+        <span class="doc-update-body">
+          <span class="doc-update-title">{{ item.title }}</span>
+          {% if item.summary %}
+            <span class="doc-update-summary">{{ item.summary }}</span>
+          {% endif %}
+        </span>
+        <time class="doc-update-date" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%d. %m. %Y" }}</time>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

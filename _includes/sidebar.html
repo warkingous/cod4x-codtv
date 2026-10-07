@@ -1,0 +1,21 @@
+<nav class="SideNav doc-nav" aria-label="Obsah">
+  <a class="SideNav-subItem" href="{{ '/' | relative_url }}" {% if page.nav == "home" %}aria-current="page"{% endif %}>Úvod</a>
+
+  <div class="doc-nav-label">Aktualizace</div>
+  <a class="SideNav-subItem" href="{{ '/updates/' | relative_url }}" {% if page.nav == "updates" %}aria-current="page"{% endif %}>Všechny</a>
+  <a class="SideNav-subItem" href="{{ '/client/' | relative_url }}" {% if page.nav == "client" %}aria-current="page"{% endif %}>Client</a>
+  <a class="SideNav-subItem" href="{{ '/server/' | relative_url }}" {% if page.nav == "server" %}aria-current="page"{% endif %}>Server</a>
+
+  <div class="doc-nav-label">Poslední</div>
+  {% assign latest = site.updates | sort: "date" | reverse %}
+  {% if latest.size == 0 %}
+    <span class="doc-nav-empty">Zatím nic</span>
+  {% else %}
+    {% for item in latest limit: 8 %}
+      <a class="SideNav-subItem" href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  {% endif %}
+
+  <div class="doc-nav-label">Šablona</div>
+  <a class="SideNav-subItem" href="{{ '/jak-pridat/' | relative_url }}" {% if page.nav == "guide" %}aria-current="page"{% endif %}>Jak přidat update</a>
+</nav>
