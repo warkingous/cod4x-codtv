@@ -21,7 +21,7 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 | --- | --- | --- |
 | Head | `J_Head` → `J_Helmet` | 4.6 |
 | Neck | `J_Neck` → `J_Head` | 3.0 |
-| Upper chest | `J_Clavicle_*` → `J_Shoulder_*` | 3.8 |
+| Upper chest | `J_Clavicle_*` → `J_Shoulder_*` | 2.6 |
 | Waist | `J_Hip_LE` → `J_Hip_RI` | 4.0 |
 | Upper arm | shoulder → elbow | 3.3 |
 | Forearm | elbow → wrist | 2.7 |
@@ -30,7 +30,7 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 | Shin | knee → ankle | 3.1 |
 | Foot | ankle → ball | 2.3, tapering to 2.0 |
 
-The chest is not one box. Four capsules run up the spine from `J_SpineLower` through `J_SpineUpper` to `J_Spine4`, with radii 4.8, 7.4, 7.6, and 7.2. The lower ones are pulled slightly toward the belly so the waist is not a hole between the hips and the chest. The first of those four is a stomach hit. The other three are upper torso.
+The chest is not one box. Four capsules run up the spine from `J_SpineLower` through `J_SpineUpper` to `J_Spine4`, with radii 4.8, 7.4, 7.6, and 5.6. The top slice is narrower so the chest does not cover the upper arms. The lower ones are pulled slightly toward the belly so the waist is not a hole between the hips and the chest. The first of those four is a stomach hit. The other three are upper torso.
 
 Hands and feet taper, the same way CS narrows the end of a limb. The heel of each boot is tucked 0.6 units back into the shin capsule so the sole stays on the ball of the foot and the heel does not stick out as its own target.
 
