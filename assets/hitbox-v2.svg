@@ -8,12 +8,12 @@
     <line x1="230" y1="188" x2="230" y2="248" stroke="#50dc50" stroke-width="92"/>
     <line x1="230" y1="236" x2="230" y2="300" stroke="#50dc50" stroke-width="88"/>
     <line x1="230" y1="292" x2="230" y2="340" stroke="#50dc50" stroke-width="58"/>
-    <line x1="168" y1="168" x2="292" y2="168" stroke="#50dc50" stroke-width="32"/>
+    <line x1="168" y1="168" x2="292" y2="168" stroke="#50dc50" stroke-width="24"/>
     <line x1="188" y1="338" x2="272" y2="338" stroke="#50dc50" stroke-width="48"/>
-    <line x1="160" y1="178" x2="132" y2="255" stroke="#508cff" stroke-width="40"/>
+    <line x1="160" y1="178" x2="132" y2="255" stroke="#508cff" stroke-width="28"/>
     <line x1="132" y1="255" x2="118" y2="328" stroke="#508cff" stroke-width="32"/>
     <line x1="118" y1="328" x2="108" y2="368" stroke="#508cff" stroke-width="22"/>
-    <line x1="300" y1="178" x2="328" y2="255" stroke="#b450ff" stroke-width="40"/>
+    <line x1="300" y1="178" x2="328" y2="255" stroke="#b450ff" stroke-width="28"/>
     <line x1="328" y1="255" x2="342" y2="328" stroke="#b450ff" stroke-width="32"/>
     <line x1="342" y1="328" x2="352" y2="368" stroke="#b450ff" stroke-width="22"/>
     <line x1="198" y1="352" x2="186" y2="455" stroke="#28d2dc" stroke-width="47"/>

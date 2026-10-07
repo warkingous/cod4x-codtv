@@ -21,9 +21,9 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 | --- | --- | --- |
 | Head | `J_Head` → `J_Helmet` | 4.6 |
 | Neck | `J_Neck` → `J_Head` | 3.0 |
-| Upper chest | `J_Clavicle_*` → `J_Shoulder_*` | 2.6 |
+| Upper chest | `J_Clavicle_*` → `J_Shoulder_*` | 2.0 |
 | Waist | `J_Hip_LE` → `J_Hip_RI` | 4.0 |
-| Upper arm | shoulder → elbow | 3.3 |
+| Upper arm | shoulder → elbow | 2.2 at the shoulder, 3.1 at the elbow |
 | Forearm | elbow → wrist | 2.7 |
 | Hand | wrist → finger | 2.2, tapering to 1.15 |
 | Thigh | hip → knee | 3.9 |
