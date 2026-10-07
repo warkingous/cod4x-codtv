@@ -2,7 +2,7 @@
   <title>CoD4x capsule hitboxes</title>
   <rect width="760" height="640" fill="#0d1117"/>
   <g fill="none" stroke-linecap="round">
-    <line x1="230" y1="58" x2="230" y2="102" stroke="#ffd228" stroke-width="56"/>
+    <line x1="230" y1="78" x2="230" y2="82" stroke="#ffd228" stroke-width="60"/>
     <line x1="230" y1="112" x2="230" y2="142" stroke="#ff8c28" stroke-width="36"/>
     <line x1="230" y1="150" x2="230" y2="198" stroke="#50dc50" stroke-width="58"/>
     <line x1="230" y1="188" x2="230" y2="248" stroke="#50dc50" stroke-width="63"/>
@@ -28,7 +28,7 @@
     <text x="430" y="74" fill="#8b949e" font-size="13">Front view. Thickness is the trace radius.</text>
     <g font-size="14">
       <line x1="430" y1="112" x2="466" y2="112" stroke="#ffd228" stroke-width="14" stroke-linecap="round"/>
-      <text x="480" y="117" fill="#e6edf3">Head  4.6</text>
+      <text x="480" y="117" fill="#e6edf3">Head  5.0</text>
       <line x1="430" y1="146" x2="466" y2="146" stroke="#ff8c28" stroke-width="14" stroke-linecap="round"/>
       <text x="480" y="151" fill="#e6edf3">Neck  3.0</text>
       <line x1="430" y1="180" x2="466" y2="180" stroke="#50dc50" stroke-width="14" stroke-linecap="round"/>
