@@ -147,8 +147,8 @@ body {
 
 .doc-content {
   width: 100%;
-  max-width: 768px;
-  padding: 24px 40px 80px;
+  max-width: none;
+  padding: 32px 48px 80px;
 }
 
 .doc-crumb {
@@ -180,7 +180,7 @@ body {
 
 .doc-lead {
   margin: 8px 0 0;
-  max-width: 66ch;
+  max-width: none;
   font-size: 16px;
   line-height: 1.5;
   color: var(--fgColor-muted, #59636e);
