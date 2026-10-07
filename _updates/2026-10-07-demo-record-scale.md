@@ -8,13 +8,13 @@ area: client
 
 ## Overview
 
-**The problem.** While a demo is recording, the client draws `RECORDING …` with the demo name and size near the bottom of the screen. That text used a fixed font size. On common HUD layouts it sat over ammo, score, or other bottom elements and got in the way.
+**The problem.** While a demo is recording, the client draws `RECORDING ...` with the demo name and size near the bottom of the screen. That text used a fixed font size. On common HUD layouts it sat over ammo, score, or other bottom elements and got in the way.
 
-**What we improved.** `cg_demoRecordScale` multiplies that line’s size. Lower it when the default covers the HUD. `1.0` keeps the stock size. The message and position stay the same — only the scale changes.
+**What we improved.** `cg_demoRecordScale` multiplies that line's size. Lower it when the default covers the HUD. `1.0` keeps the stock size. The message and position stay the same - only the scale changes.
 
 ## Stock
 
-`SCR_DrawDemoRecording` runs when `clc.demorecording` is set. It builds the string from the demo name and file size in kilobytes, places it at logical `(5, 479)`, and draws with the console font at a fixed normalized scale of `0.333…`:
+`SCR_DrawDemoRecording` runs when `clc.demorecording` is set. It builds the string from the demo name and file size in kilobytes, places it at logical `(5, 479)`, and draws with the console font at a fixed normalized scale of `0.333...`:
 
 ```
 xScale = R_NormalizedTextScale(cls.consoleFont, 0.33333334);
@@ -26,7 +26,7 @@ There was no cvar to shrink or grow that line. Official CoD4x used the same fixe
 
 ## What changed
 
-`cg_demoRecordScale` is registered as a float, archive, range `0.5`–`1.0`, default `1.0`. The draw path multiplies the stock normalized scale by that value before `ScrPlace_ApplyRect`:
+`cg_demoRecordScale` is registered as a float, archive, range `0.5` to `1.0`, default `1.0`. The draw path multiplies the stock normalized scale by that value before `ScrPlace_ApplyRect`:
 
 ```
 userScale = cg_demoRecordScale;
