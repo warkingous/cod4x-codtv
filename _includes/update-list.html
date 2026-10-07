@@ -13,6 +13,9 @@
       <a class="doc-update" href="{{ item.url | relative_url }}">
         <span class="doc-areas">{% include area-labels.html area=item.area %}</span>
         <span class="doc-update-body">
+          {% if item.category %}
+            <span class="doc-update-category">{{ item.category }}</span>
+          {% endif %}
           <span class="doc-update-title">{{ item.title }}</span>
           {% if item.summary %}
             <span class="doc-update-summary">{{ item.summary }}</span>

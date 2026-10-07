@@ -226,6 +226,20 @@ body {
   padding-left: 24px;
 }
 
+.doc-category,
+.doc-update-category {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fgColor-muted, #59636e);
+}
+
+.doc-category {
+  margin-bottom: 8px;
+}
+
 .doc-meta {
   display: flex;
   align-items: center;

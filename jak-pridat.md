@@ -11,18 +11,19 @@ A new update is one file in `_updates`. GitHub Pages rebuilds the site after a p
 
 1. Copy `_updates/priklad.md`.
 2. Name the copy by date and topic, for example `2026-10-07-slide.md`. The file name is the address: `/updates/2026-10-07-slide/`.
-3. Edit the header at the top of the file. `area` is `client`, `server`, or `both` when the change covers both.
+3. Edit the header at the top of the file. `title` is this change, not the group it belongs to. `category` is that group, for example `Engine improvements`, and more articles can share it. `area` is `client`, `server`, or `both` when the change covers both.
 
 ~~~yaml
 ---
-title: Update title
+title: Higher tickrate
+category: Engine improvements
 summary: One sentence shown in the list.
 date: 2026-10-07
-area: client
+area: both
 ---
 ~~~
 
-4. Write the text under the header in Markdown. Headings from `##`, lists, `code`, and code blocks.
+4. Write the text under the header in Markdown. Start with `## Stock` (what the game did before) and `## What changed` (only what this update adds or edits). Headings from `##`, lists, `code`, and code blocks.
 5. Delete the `_updates/priklad.md` example once the first real write-up is in.
 6. Commit and push to the `main` branch.
 

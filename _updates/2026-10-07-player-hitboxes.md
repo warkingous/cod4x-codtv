@@ -1,17 +1,18 @@
 ---
 title: Player hitboxes
-summary: Bullet hits on players use capsules along the live skeleton, the same idea as CS2, instead of the stock bone boxes.
+category: Engine improvements
+summary: Stock bullets hit baked boxes on the bones. Hits now use capsules along the live skeleton, the same idea as CS2.
 date: 2026-10-07
 area: both
 ---
 
-Stock Call of Duty 4 answers a bullet with `DObjTraceline` against baked boxes on the bones. Those boxes stay blocky when the player crouches, leans, or aims, and a shot can count on a corner that is only the box, not the body.
+## Stock
 
-Player hits now test capsules. A capsule is a cylinder with a hemisphere on each end, swept between two bones. It turns with the skeleton, so the volume follows the pose.
+A bullet against a player is answered by `DObjTraceline` and baked boxes on the bones. Those boxes stay blocky when the player crouches, leans, or aims, and a shot can count on a corner that is only the box, not the body.
 
-## What gets traced
+## What changed
 
-Each segment is one capsule. The server, the listen-server hook, and the debug draw share one table.
+Player hits now test capsules. A capsule is a cylinder with a hemisphere on each end, swept between two bones. It turns with the skeleton, so the volume follows the pose. The server, the listen-server hook, and the debug draw share one table.
 
 | Segment | Bones | Radius |
 | --- | --- | --- |
@@ -32,15 +33,11 @@ Hands and feet taper, the same way CS narrows the end of a limb. The heel of eac
 
 `J_Ball_*` is not posed by the stock trace. Its position is the parent bone plus that child's offset from the model, so the foot capsule still has an end point.
 
-## Where it runs
+`sv_capsuleHitboxes` defaults to `1`. Set it to `0` and players fall back to the stock bone boxes. `sv_capsuleHitboxScale` multiplies every radius on the trace. The default is `1`, and the range is `0.5` to `2`.
 
-`sv_capsuleHitboxes` defaults to `1`. Set it to `0` and players fall back to the stock bone boxes. `sv_capsuleHitboxScale` multiplies every radius. The default is `1`, and the range is `0.5` to `2`.
-
-A listen server traces inside the game executable, so the dedicated-server replacement never loads there. The client hooks that same trace and runs the capsules against the skeleton it is already drawing. Players do not fall back to the boxes on a listen server.
+A listen server traces inside the game executable, so the dedicated-server replacement never loads there. The client hooks that same trace and runs the capsules against the skeleton it is already drawing.
 
 The hit group written into the trace is the normal CoD location: head, neck, upper or lower torso, and each arm, hand, leg, and foot. Damage and hitmarkers still use those groups.
-
-## Seeing them
 
 `cg_drawPlayerHitboxes` is a cheat cvar. It draws only on a `devmap` server or while a demo is playing.
 
@@ -48,4 +45,4 @@ The hit group written into the trace is the normal CoD location: head, neck, upp
 - `1` wireframe
 - `2` solid
 
-`cg_playerHitboxColor` `0` is the per-part colors in the picture, `1` is white, `2` is red. The debug draw does not apply `sv_capsuleHitboxScale`. The trace does.
+`cg_playerHitboxColor` `0` colors each part, `1` is white, `2` is red. The debug draw does not apply `sv_capsuleHitboxScale`. The trace does.

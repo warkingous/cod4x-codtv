@@ -54,6 +54,9 @@
               {% endif %}
             </nav>
           {% endunless %}
+          {% if page.category %}
+            <p class="doc-category">{{ page.category }}</p>
+          {% endif %}
           <h1 class="doc-title">{{ page.headline | default: page.title }}</h1>
           {% if page.summary %}
             <p class="doc-lead">{{ page.summary }}</p>
