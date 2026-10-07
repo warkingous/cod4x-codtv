@@ -1,0 +1,19 @@
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stock recording text versus scaled recording text over the HUD">
+  <rect width="720" height="260" fill="#121820"/>
+
+  <text x="180" y="28" text-anchor="middle" fill="#ff6b6b" font-size="13" font-family="Consolas,monospace">stock scale 1.0</text>
+  <rect x="30" y="44" width="300" height="180" fill="rgba(255,107,107,0.05)" stroke="#ff6b6b" stroke-width="1" opacity="0.45"/>
+  <rect x="50" y="70" width="260" height="120" fill="#1a222c" stroke="#3a4654" stroke-width="1"/>
+  <text x="70" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">ammo / score HUD</text>
+  <rect x="60" y="140" width="220" height="28" fill="#2a3340" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="70" y="159" fill="#ff6b6b" font-size="12" font-family="Consolas,monospace">RECORDING demo: 12k</text>
+  <text x="50" y="210" fill="#8b9aab" font-size="11">covers the bottom HUD</text>
+
+  <text x="540" y="28" text-anchor="middle" fill="#3dd68c" font-size="13" font-family="Consolas,monospace">cg_demoRecordScale 0.7</text>
+  <rect x="390" y="44" width="300" height="180" fill="rgba(61,214,140,0.05)" stroke="#3dd68c" stroke-width="1" opacity="0.45"/>
+  <rect x="410" y="70" width="260" height="120" fill="#1a222c" stroke="#3a4654" stroke-width="1"/>
+  <text x="430" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">ammo / score HUD</text>
+  <rect x="420" y="155" width="150" height="18" fill="#2a3340" stroke="#3dd68c" stroke-width="1.5"/>
+  <text x="428" y="168" fill="#3dd68c" font-size="9" font-family="Consolas,monospace">RECORDING demo: 12k</text>
+  <text x="410" y="210" fill="#8b9aab" font-size="11">smaller, HUD stays clear</text>
+</svg>
