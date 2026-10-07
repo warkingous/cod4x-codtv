@@ -140,10 +140,13 @@ body {
 
 .doc-main {
   flex: 1;
+  display: flex;
+  justify-content: center;
   min-width: 0;
 }
 
 .doc-content {
+  width: 100%;
   max-width: 768px;
   padding: 24px 40px 80px;
 }
@@ -189,8 +192,7 @@ body {
   flex: 0 0 220px;
   width: 220px;
   max-height: calc(100vh - 4.25rem);
-  margin-left: auto;
-  padding: 28px 24px 32px 0;
+  padding: 28px 24px 32px 16px;
   overflow: auto;
 }
 
@@ -404,7 +406,8 @@ body {
     display: block;
   }
 
-  .doc-center {
+  .doc-center,
+  .doc-main {
     display: block;
   }
 
