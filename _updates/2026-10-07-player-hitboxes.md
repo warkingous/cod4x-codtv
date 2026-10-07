@@ -19,7 +19,7 @@ Each segment is one capsule. The server, the listen-server hook, and the debug d
 
 | Segment | Bones | Radius |
 | --- | --- | --- |
-| Head | `J_Head` → `J_Helmet` | 5.0, a sphere on the skull |
+| Head | `J_Head` → `J_Helmet` | 5.0 tube, lower end past the chin |
 | Neck | `J_Neck` → `J_Head` | 3.0 |
 | Upper chest | `J_Clavicle_*` → `J_Shoulder_*` | 2.0 |
 | Waist | `J_Hip_LE` → `J_Hip_RI` | 4.0 |
