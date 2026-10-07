@@ -6,7 +6,7 @@ date: 2026-10-07
 area: both
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** You connect, open the scoreboard, and some rows are empty — or still show a name from a previous match or another player who used that slot. The game already knew who was online; the scoreboard just failed to show it.
 

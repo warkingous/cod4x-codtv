@@ -6,7 +6,7 @@ date: 2026-10-07
 area: both
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** Stock CoD4 thinks in big 50 ms chunks. Your movement, collisions, and how other players are drawn all wait on that slow clock. On a fast server that still feels choppy: enemies hitch between positions, and your own steps are coarse.
 

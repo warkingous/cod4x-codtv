@@ -6,7 +6,7 @@ date: 2026-10-07
 area: server
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** Two separate cheesy deaths. Toss a nade on your side of a wall next to a parked car, and the car could still blow up. Then the car's own blast could reach you over that same wall even if you were crouched in cover. Cover did not feel like cover.
 

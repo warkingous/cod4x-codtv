@@ -6,7 +6,7 @@ date: 2026-10-07
 area: both
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** Two annoyances. If your loadout was smoke, you could not take a flash off a corpse (and the other way around). And when someone cooked a nade and left it on the ground, the UI could show both “throw back” and “pickup” — even though a live grenade waiting to explode is not loot.
 

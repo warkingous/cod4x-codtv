@@ -6,7 +6,7 @@ date: 2026-10-07
 area: both
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** Stock hit detection uses stiff boxes glued to bones. When someone crouches, leans, or aims, those boxes stay chunky. A bullet can count as a hit on empty space at a corner, or miss a limb that clearly looked covered.
 

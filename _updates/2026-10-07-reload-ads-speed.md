@@ -6,7 +6,7 @@ date: 2026-10-07
 area: both
 ---
 
-## In plain terms
+## Overview
 
 **The problem.** Hold aim, start a reload, and keep strafing around a corner. Stock still showed the ADS zoom, but you moved as fast as from the hip. That was a free speed boost on every reload peek — especially obvious with scopes.
 
