@@ -1,0 +1,16 @@
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bug where throwback icon and pickup text both appear on a cooking grenade">
+  <rect width="720" height="260" fill="#121820"/>
+  <text x="360" y="28" text-anchor="middle" fill="#ff6b6b" font-size="13" font-family="Consolas,monospace">stale eType on a cooking nade</text>
+
+  <rect x="60" y="52" width="600" height="160" fill="rgba(255,107,107,0.05)" stroke="#ff6b6b" stroke-width="1" opacity="0.45"/>
+
+  <text x="100" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">playerState</text>
+  <text x="100" y="124" fill="#f5d76e" font-size="14" font-family="Consolas,monospace">throwBackGrenadeTimeLeft &gt; 0</text>
+  <text x="100" y="156" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">’ throwback icon</text>
+
+  <text x="400" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">entity snapshot</text>
+  <text x="400" y="124" fill="#ff6b6b" font-size="14" font-family="Consolas,monospace">eType wrong / missing</text>
+  <text x="400" y="156" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">’ PICKUP line</text>
+
+  <text x="360" y="240" text-anchor="middle" fill="#8b9aab" font-size="12" font-family="Consolas,monospace">both on screen at once. trust the timer.</text>
+</svg>

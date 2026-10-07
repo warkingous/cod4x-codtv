@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Live thrown grenade versus corpse drop cursor hints">
+  <rect width="760" height="320" fill="#121820"/>
+
+  <!-- Live missile -->
+  <text x="185" y="28" text-anchor="middle" fill="#f5d76e" font-size="13" font-family="Consolas,monospace">live throw  ET_MISSILE</text>
+  <rect x="30" y="44" width="310" height="250" fill="rgba(245,215,110,0.05)" stroke="#f5d76e" stroke-width="1" opacity="0.45"/>
+  <circle cx="100" cy="120" r="22" fill="#2a3340" stroke="#f5d76e" stroke-width="2"/>
+  <text x="100" y="124" text-anchor="middle" fill="#f5d76e" font-size="11" font-family="Consolas,monospace">nade</text>
+  <text x="148" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">throwBackGrenadeTimeLeft &gt; 0</text>
+  <text x="148" y="122" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">still cooking</text>
+  <text x="50" y="180" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">frag hint</text>
+  <text x="50" y="204" fill="#3dd68c" font-size="15" font-family="Consolas,monospace">THROW BACK</text>
+  <text x="50" y="236" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">smoke / flash hint</text>
+  <text x="50" y="260" fill="#8b9aab" font-size="15" font-family="Consolas,monospace">none</text>
+
+  <!-- Corpse drop -->
+  <text x="555" y="28" text-anchor="middle" fill="#3dd68c" font-size="13" font-family="Consolas,monospace">corpse drop  ET_ITEM</text>
+  <rect x="420" y="44" width="310" height="250" fill="rgba(61,214,140,0.05)" stroke="#3dd68c" stroke-width="1" opacity="0.45"/>
+  <rect x="470" y="88" width="70" height="36" rx="0" fill="#2a3340" stroke="#3dd68c" stroke-width="2"/>
+  <text x="505" y="110" text-anchor="middle" fill="#3dd68c" font-size="11" font-family="Consolas,monospace">item</text>
+  <text x="560" y="100" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">timer 0</text>
+  <text x="560" y="122" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">fell off the body</text>
+  <text x="440" y="180" fill="#8b9aab" font-size="11" font-family="Consolas,monospace">frag / smoke / flash</text>
+  <text x="440" y="210" fill="#3dd68c" font-size="15" font-family="Consolas,monospace">PICKUP</text>
+  <text x="440" y="248" fill="#8b9aab" font-size="11">activate. same as a gun drop.</text>
+</svg>
